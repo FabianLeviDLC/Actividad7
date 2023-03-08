@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id('Student_Id');
             $table->string('FName');
             $table->string('LName');
-            $table->Integer('Group_Id');
-            $table->Integer('Course_Id');
-            $table->Integer('User_Id');
+            $table->id('Group_Id');
+            $table->id('Course_Id');
+            $table->id('User_Id');
             $table->timestamps();
         });
     }
