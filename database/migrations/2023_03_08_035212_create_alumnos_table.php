@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('alumnos', function (Blueprint $table) {
             $table->id('Student_Id');
-            $table->string('FName');
-            $table->string('LName');
+            $table->string('Name');
             $table->foreignId('Group_Id');
             $table->foreignId('Course_Id');
             $table->foreignId('User_Id');
